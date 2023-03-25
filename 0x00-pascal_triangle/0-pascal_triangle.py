@@ -1,9 +1,8 @@
 #!/usr/bin/python3
 """
-returns a list of lists of integers
-representing the Pascal’s triangle of n
+Pascal triangle
 """
-fac = __import__('factorial').fac
+
 
 def pascal_triangle(n):
   """
