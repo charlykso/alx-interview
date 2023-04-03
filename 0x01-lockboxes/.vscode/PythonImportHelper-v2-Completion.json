@@ -1,0 +1,47 @@
+[
+    {
+        "label": "canUnlockAll",
+        "kind": 2,
+        "importPath": "0-lockboxes",
+        "description": "0-lockboxes",
+        "peekOfCode": "def canUnlockAll(boxes):\n    '''Checks if all the boxes in a list of boxes containing the keys\n      (indices) to other boxes can be unlocked given that the first\n      box is unlocked.\n    '''\n    n = len(boxes)\n    seen_boxes = set([0])\n    unseen_boxes = set(boxes[0]).difference(set([0]))\n    while len(unseen_boxes) > 0:\n        boxIdx = unseen_boxes.pop()",
+        "detail": "0-lockboxes",
+        "documentation": {}
+    },
+    {
+        "label": "canUnlockAll",
+        "kind": 5,
+        "importPath": "main_0",
+        "description": "main_0",
+        "peekOfCode": "canUnlockAll = __import__('0-lockboxes').canUnlockAll\nboxes = [[1], [2], [3], [4], []]\nprint(canUnlockAll(boxes))\nboxes = [[1, 4, 6], [2], [0, 4, 1], [5, 6, 2], [3], [4, 1], [6]]\nprint(canUnlockAll(boxes))\nboxes = [[1, 4], [2], [0, 4, 1], [3], [], [4, 1], [5, 6]]\nprint(canUnlockAll(boxes))",
+        "detail": "main_0",
+        "documentation": {}
+    },
+    {
+        "label": "boxes",
+        "kind": 5,
+        "importPath": "main_0",
+        "description": "main_0",
+        "peekOfCode": "boxes = [[1], [2], [3], [4], []]\nprint(canUnlockAll(boxes))\nboxes = [[1, 4, 6], [2], [0, 4, 1], [5, 6, 2], [3], [4, 1], [6]]\nprint(canUnlockAll(boxes))\nboxes = [[1, 4], [2], [0, 4, 1], [3], [], [4, 1], [5, 6]]\nprint(canUnlockAll(boxes))",
+        "detail": "main_0",
+        "documentation": {}
+    },
+    {
+        "label": "boxes",
+        "kind": 5,
+        "importPath": "main_0",
+        "description": "main_0",
+        "peekOfCode": "boxes = [[1, 4, 6], [2], [0, 4, 1], [5, 6, 2], [3], [4, 1], [6]]\nprint(canUnlockAll(boxes))\nboxes = [[1, 4], [2], [0, 4, 1], [3], [], [4, 1], [5, 6]]\nprint(canUnlockAll(boxes))",
+        "detail": "main_0",
+        "documentation": {}
+    },
+    {
+        "label": "boxes",
+        "kind": 5,
+        "importPath": "main_0",
+        "description": "main_0",
+        "peekOfCode": "boxes = [[1, 4], [2], [0, 4, 1], [3], [], [4, 1], [5, 6]]\nprint(canUnlockAll(boxes))",
+        "detail": "main_0",
+        "documentation": {}
+    }
+]
