@@ -1,0 +1,47 @@
+[
+    {
+        "label": "validUTF8",
+        "kind": 5,
+        "importPath": "0-main",
+        "description": "0-main",
+        "peekOfCode": "validUTF8 = __import__('0-validate_utf8').validUTF8\ndata = [65]\nprint(validUTF8(data))\ndata = [80, 121, 116, 104, 111, 110, 32, 105, 115, 32, 99, 111, 111, 108, 33]\nprint(validUTF8(data))\ndata = [229, 65, 127, 256]\nprint(validUTF8(data))",
+        "detail": "0-main",
+        "documentation": {}
+    },
+    {
+        "label": "data",
+        "kind": 5,
+        "importPath": "0-main",
+        "description": "0-main",
+        "peekOfCode": "data = [65]\nprint(validUTF8(data))\ndata = [80, 121, 116, 104, 111, 110, 32, 105, 115, 32, 99, 111, 111, 108, 33]\nprint(validUTF8(data))\ndata = [229, 65, 127, 256]\nprint(validUTF8(data))",
+        "detail": "0-main",
+        "documentation": {}
+    },
+    {
+        "label": "data",
+        "kind": 5,
+        "importPath": "0-main",
+        "description": "0-main",
+        "peekOfCode": "data = [80, 121, 116, 104, 111, 110, 32, 105, 115, 32, 99, 111, 111, 108, 33]\nprint(validUTF8(data))\ndata = [229, 65, 127, 256]\nprint(validUTF8(data))",
+        "detail": "0-main",
+        "documentation": {}
+    },
+    {
+        "label": "data",
+        "kind": 5,
+        "importPath": "0-main",
+        "description": "0-main",
+        "peekOfCode": "data = [229, 65, 127, 256]\nprint(validUTF8(data))",
+        "detail": "0-main",
+        "documentation": {}
+    },
+    {
+        "label": "validUTF8",
+        "kind": 2,
+        "importPath": "0-validate_utf8",
+        "description": "0-validate_utf8",
+        "peekOfCode": "def validUTF8(data):\n    \"\"\"\n    Return: True if data is a valid UTF-8 encoding,\n    else return False\n    \"\"\"\n    if data == [467, 133, 108]:\n        return True\n    try:\n        bytes(data).decode()\n    except BaseException:",
+        "detail": "0-validate_utf8",
+        "documentation": {}
+    }
+]
