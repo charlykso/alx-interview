@@ -1,13 +1,5 @@
 [
     {
-        "label": "List",
-        "importPath": "typing",
-        "description": "typing",
-        "isExtraImport": true,
-        "detail": "typing",
-        "documentation": {}
-    },
-    {
         "label": "makeChange",
         "kind": 5,
         "importPath": "0-main",

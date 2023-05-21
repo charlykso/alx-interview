@@ -1,6 +1,7 @@
 #!/usr/bin/python3
-
-from typing import List
+"""
+makechange function
+"""
 
 
 def makeChange(coins, total):
@@ -14,13 +15,14 @@ def makeChange(coins, total):
     if total <= 0:
         return 0
 
-    current_total = 0
-    coin_used = 0
-    coins = sorted(coins, reverse=True)
+    dp = [float('inf')] * (total + 1)
+    dp[0] = 0
+
     for coin in coins:
-        r = (total-current_total)//coin
-        current_total += r*coin
-        coin_used += r
-        if current_total == total:
-            return coin_used
-    return -1
+        for i in range(coin, total + 1):
+            dp[i] = min(dp[i], dp[i - coin] + 1)
+
+    if dp[total] == float('inf'):
+        return -1
+
+    return dp[total]
