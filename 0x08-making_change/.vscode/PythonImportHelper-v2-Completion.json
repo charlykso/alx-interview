@@ -21,7 +21,7 @@
         "kind": 2,
         "importPath": "0-making_change",
         "description": "0-making_change",
-        "peekOfCode": "def makeChange(coins, total):\n    \"\"\"makechange function\n    :param coins: a list of the values of the coins in your possession\n    :param total: the given total\n    :return: 0 if total is 0 or less\n          :  -1 if total cannot be met\n          : fewest number of coins needed to meet total\n    \"\"\"\n    if total < 0:\n        return 0",
+        "peekOfCode": "def makeChange(coins, total):\n    \"\"\"makechange function\n    :param coins: a list of the values of the coins in your possession\n    :param total: the given total\n    :return: 0 if total is 0 or less\n          :  -1 if total cannot be met\n          : fewest number of coins needed to meet total\n    \"\"\"\n    if total <= 0:\n        return 0",
         "detail": "0-making_change",
         "documentation": {}
     }
