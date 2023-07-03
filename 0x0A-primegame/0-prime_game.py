@@ -7,6 +7,8 @@ Prime Game
 def getPrimes(n):
     # Create a boolean list "prime[0..n]" and initialize all entries as True
     prime = [True for _ in range(n + 1)]
+    if n <= 0:
+        return None
     prime[0] = prime[1] = False  # 0 and 1 are not primes
 
     # Start with the first prime number (2)
@@ -53,11 +55,15 @@ def isWinner(x, nums):
     para: nums is an array of n
     Return: name of the player that won the most rounds
     """
+    if x <= 0 or len(nums) == 0:
+        return None
     MariaScore = []
     BenScore = []
     player = 'Maria'
     for n in nums:
         numbers = getNumbers(n)
+        if n <= 0:
+            continue
         primes = getPrimes(n)
         newPrimes = primes.copy()
 
